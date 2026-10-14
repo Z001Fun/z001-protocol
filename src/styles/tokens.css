@@ -1,0 +1,50 @@
+/* Palette provenance.
+   Method: k-means (k=6, n_init=3, random_state=1) over a 40000-pixel sample of opaque pixels,
+   each centroid snapped to the nearest real pixel of the whole asset. File and (x,y) per colour
+   are recorded in register/palette.json and verified pixel by pixel by the palette gate.
+   brand/LOGO Z001 PNG...png (RGBA, colortype 6): ink (1032,540) mint (1157,1382) leaf (1310,1275)
+     gold (980,551) cream (1304,1120) amber (937,811)
+   reference/Z001 3.jpg.jpeg: night (102,26) moss (1545,613) grass (229,553) lime (1585,592)
+   reference/SAMPUL Z001 JPG.jpg.jpeg: coral (477,319)
+   This is the only file allowed to contain colour literals. */
+:root {
+  --ink: #020301;
+  --mint: #8dfa90;
+  --leaf: #01be06;
+  --gold: #fac60a;
+  --cream: #f2fceb;
+  --amber: #a85e0d;
+  --night: #020401;
+  --moss: #0f5411;
+  --grass: #3fc822;
+  --lime: #a9f06c;
+  --coral: #d9493e;
+
+  /* derived surfaces: mixes of sampled colours only */
+  --bg: var(--night);
+  --panel: color-mix(in oklab, var(--night) 90%, var(--moss));
+  --panel-2: color-mix(in oklab, var(--night) 78%, var(--moss));
+  --line: color-mix(in oklab, var(--cream) 13%, transparent);
+  --line-strong: color-mix(in oklab, var(--cream) 26%, transparent);
+  --fg: var(--cream);
+  --muted: color-mix(in oklab, var(--cream) 68%, var(--night));
+  --faint: color-mix(in oklab, var(--cream) 44%, var(--night));
+  --pay: var(--grass);
+  --on-pay: var(--night);
+  --up: var(--mint);
+  --down: var(--coral);
+  --glow: color-mix(in oklab, var(--leaf) 55%, transparent);
+  --spot: color-mix(in oklab, var(--lime) 16%, transparent);
+  --lift: inset 0 1px 0 color-mix(in oklab, var(--cream) 6%, transparent), 0 24px 48px -32px color-mix(in oklab, var(--ink) 90%, transparent);
+
+  --sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --mono: ui-monospace, "SF Mono", "Cascadia Mono", Consolas, monospace;
+  --ease: cubic-bezier(.16, 1, .3, 1);
+  --gutter: clamp(1rem, 4vw, 2.5rem);
+  --radius: 1.5rem;
+  --side: 15.75rem;
+  --bar: 5.25rem;
+  color-scheme: dark;
+}
+@media (width <= 78rem) { :root { --side: 4.6rem; } }
+@media (width <= 40rem) { :root { --side: 0rem; --bar: 4.5rem; } }

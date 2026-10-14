@@ -1,0 +1,16 @@
+{
+  "method": "KMeans(k=6, n_init=3, random_state=1) over a 40000-pixel sample of opaque pixels (alpha>200); centroid snapped to the nearest real pixel of the whole asset; x,y is that pixel",
+  "colors": [
+    { "token": "ink",   "hex": "#020301", "file": "brand/LOGO Z001 PNG...png", "x": 1032, "y": 540 },
+    { "token": "mint",  "hex": "#8dfa90", "file": "brand/LOGO Z001 PNG...png", "x": 1157, "y": 1382 },
+    { "token": "leaf",  "hex": "#01be06", "file": "brand/LOGO Z001 PNG...png", "x": 1310, "y": 1275 },
+    { "token": "gold",  "hex": "#fac60a", "file": "brand/LOGO Z001 PNG...png", "x": 980,  "y": 551 },
+    { "token": "cream", "hex": "#f2fceb", "file": "brand/LOGO Z001 PNG...png", "x": 1304, "y": 1120 },
+    { "token": "amber", "hex": "#a85e0d", "file": "brand/LOGO Z001 PNG...png", "x": 937,  "y": 811 },
+    { "token": "night", "hex": "#020401", "file": "reference/Z001 3.jpg.jpeg", "x": 102,  "y": 26 },
+    { "token": "moss",  "hex": "#0f5411", "file": "reference/Z001 3.jpg.jpeg", "x": 1545, "y": 613 },
+    { "token": "grass", "hex": "#3fc822", "file": "reference/Z001 3.jpg.jpeg", "x": 229,  "y": 553 },
+    { "token": "lime",  "hex": "#a9f06c", "file": "reference/Z001 3.jpg.jpeg", "x": 1585, "y": 592 },
+    { "token": "coral", "hex": "#d9493e", "file": "reference/SAMPUL Z001 JPG.jpg.jpeg", "x": 477, "y": 319 }
+  ]
+}

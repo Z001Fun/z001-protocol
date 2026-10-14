@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "rule": "Every external fact is one record. state is stated, absent or unconfirmed. Only a stated record may carry value or url.",
+  "records": [
+    { "id": "chain", "label": "Chain", "state": "stated", "value": "Solana", "rpc": "https://solana-rpc.publicnode.com", "source": "client statement", "scope": "batch-level", "checked": "2026-10-14" },
+    { "id": "domain", "label": "Domain", "state": "stated", "value": "z001.fun", "source": "client statement", "scope": "batch-level", "checked": "2026-10-14" },
+    { "id": "market-source", "label": "Market feed", "state": "stated", "value": "DexScreener", "boosts": "https://api.dexscreener.com/token-boosts/top/v1", "pairs": "https://api.dexscreener.com/tokens/v1/solana/", "source": "client statement", "scope": "batch-level", "checked": "2026-10-14" },
+    { "id": "ca", "label": "Contract", "kind": "address", "state": "absent", "source": "client statement", "scope": "batch-level", "checked": "2026-10-14" },
+    { "id": "x", "label": "X", "kind": "url", "state": "absent", "source": "client statement", "scope": "batch-level", "checked": "2026-10-14" },
+    { "id": "github", "label": "GitHub", "kind": "url", "state": "absent", "source": "client statement", "scope": "batch-level", "checked": "2026-10-14" },
+    { "id": "supply", "label": "Total supply", "state": "absent", "source": "client statement", "scope": "batch-level", "checked": "2026-10-14" },
+    { "id": "agents", "label": "Swarm size", "state": "unconfirmed", "source": "client banner image", "scope": "batch-level", "checked": "2026-10-14" },
+    { "id": "fee-split", "label": "Revenue split", "state": "absent", "source": "client statement", "scope": "batch-level", "checked": "2026-10-14" },
+    { "id": "liquidity-lock", "label": "Liquidity lock", "state": "absent", "source": "client statement", "scope": "batch-level", "checked": "2026-10-14" },
+    { "id": "audit", "label": "Audit", "state": "absent", "source": "client statement", "scope": "batch-level", "checked": "2026-10-14" }
+  ]
+}

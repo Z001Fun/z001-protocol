@@ -1,0 +1,15 @@
+{
+  "name": "z001",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Z001 on Solana",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "assets": "python -I tools/mkassets.py",
+    "build": "node tools/build.mjs",
+    "gates": "node tools/gates.mjs",
+    "serve": "node tools/serve.mjs dist 4173"
+  },
+  "engines": { "node": ">=20" }
+}

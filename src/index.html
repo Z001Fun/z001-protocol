@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Z001 · Crowned by code</title>
+<meta name="description" content="Meet Z001: a bitmap kingdom for tokens, plus a streaming look at the busiest Solana markets.">
+<meta name="theme-color" content="<!--@night-->">
+<meta property="og:title" content="Z001 · Crowned by code">
+<meta property="og:description" content="A bitmap kingdom for tokens, plus a streaming look at the busiest Solana markets.">
+<meta property="og:image" content="/share.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/tokens.css">
+<link rel="stylesheet" href="/assets/site.css">
+<script>document.documentElement.classList.add('js')</script>
+<script type="module" src="/assets/js/main.js"></script>
+</head>
+<body>
+<div class="progress" aria-hidden="true"><i></i></div>
+
+<aside class="side" aria-label="Sections">
+  <a class="side-brand" href="#start" aria-label="Z001 home"><img src="/logo-192.png" alt="" width="40" height="40"><b>Z001</b></a>
+  <nav class="side-nav">
+    <a href="#start" data-nav="start"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11l8-7 8 7v9h-5v-6H9v6H4z"/></svg><span>Start</span></a>
+    <a href="#pulse" data-nav="pulse"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg><span>Pulse</span></a>
+    <a href="#method" data-nav="method"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.5 6.5L21 12l-6.5 2.5L12 21l-2.5-6.5L3 12l6.5-2.5z"/></svg><span>Method</span></a>
+    <a href="#ledger" data-nav="ledger"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14v16H5zM9 9h6M9 13h6"/></svg><span>Ledger</span></a>
+    <a href="#path" data-nav="path"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 18c4 0 4-12 8-12s4 12 8 12"/></svg><span>Path</span></a>
+  </nav>
+</aside>
+
+<div class="page">
+  <header class="top">
+    <a class="top-brand" href="#start" aria-label="Z001 home"><img src="/logo-192.png" alt="" width="40" height="40"></a>
+    <!--@ca-->
+    <div class="socials"><!--@social--></div>
+  </header>
+
+  <main>
+    <section class="scene" id="start" aria-labelledby="h1">
+      <div class="mesh" aria-hidden="true"><i></i><i></i><i></i></div>
+      <div class="stars" aria-hidden="true" data-depth=".6"></div>
+      <img class="plate" src="/hero-plate.jpg" alt="" width="960" height="840" data-depth=".3" fetchpriority="high">
+      <div class="scene-copy">
+        <div class="pill" data-pill role="status" aria-live="polite"><i class="dot" aria-hidden="true"></i><span>Syncing</span></div>
+        <h1 id="h1" data-reveal>Crowned<br>by code.</h1>
+        <p class="lede" data-reveal>Meet Z001: a bitmap kingdom for tokens that deserve a stage. Bring the spark; a swarm of tireless automatons adds the shine.</p>
+        <div class="cta" data-reveal>
+          <a class="btn primary" href="#pulse">Follow the pulse</a>
+          <a class="btn" href="#method">See the method</a>
+        </div>
+      </div>
+      <div class="marquee" data-ticker aria-label="Streaming token ticker"><div class="track" aria-hidden="true"></div></div>
+    </section>
+
+    <section class="dash" id="pulse" aria-labelledby="pulse-h">
+      <header class="phead" data-reveal>
+        <div>
+          <p class="eyebrow">Market pulse</p>
+          <h2 id="pulse-h">Busiest on Solana</h2>
+        </div>
+        <p class="sub">The ten tokens that moved the most value across the latest full cycle, read from public order books.</p>
+      </header>
+
+      <div class="dgrid">
+        <section class="dcard spot span-7" data-reveal aria-labelledby="t-board">
+          <div class="dcard-body">
+            <div class="board" role="table" aria-label="Ten busiest by daily volume">
+              <div class="brow bhead" role="row">
+                <span role="columnheader">#</span><span role="columnheader">Token</span><span role="columnheader" class="r">Price</span><span role="columnheader" class="r">24h</span><span role="columnheader" class="r hide-m">Volume</span><span role="columnheader" class="r hide-s">Liquidity</span><span role="columnheader" class="r"><span class="sr">Copy address</span></span>
+              </div>
+              <div class="bbody" data-board role="rowgroup"></div>
+            </div>
+            <p class="board-note" data-note hidden></p>
+          </div>
+          <footer class="dcard-foot"><h3 id="t-board">Ten busiest by volume</h3><span class="meta"><!--@chain--></span></footer>
+        </section>
+
+        <section class="dcard spot span-5" data-reveal aria-labelledby="t-sum">
+          <div class="dcard-body">
+            <ul class="tiles" data-summary>
+              <li class="tile spot"><span class="k">Tracked</span><span class="v big" data-s="count"><i class="sk"></i></span></li>
+              <li class="tile spot"><span class="k">Combined volume</span><span class="v big" data-s="vol"><i class="sk"></i></span></li>
+              <li class="tile spot"><span class="k">Strongest mover</span><span class="v big" data-s="mover"><i class="sk"></i></span></li>
+              <li class="tile spot"><span class="k">Network slot</span><span class="v big" data-s="slot"><i class="sk"></i></span></li>
+            </ul>
+          </div>
+          <footer class="dcard-foot"><h3 id="t-sum">At a glance</h3><span class="meta">streaming</span></footer>
+        </section>
+
+        <section class="dcard spot span-7" id="method" data-reveal aria-labelledby="t-method">
+          <div class="dcard-body">
+            <div class="tabs" role="tablist" aria-label="Method" data-tabs>
+              <button type="button" role="tab" id="tab-spark" aria-controls="pan-spark" aria-selected="true">Spark</button>
+              <button type="button" role="tab" id="tab-forge" aria-controls="pan-forge" aria-selected="false" tabindex="-1">Forge</button>
+              <button type="button" role="tab" id="tab-reign" aria-controls="pan-reign" aria-selected="false" tabindex="-1">Reign</button>
+              <i class="ink" aria-hidden="true"></i>
+            </div>
+            <div class="panels">
+              <div role="tabpanel" id="pan-spark" aria-labelledby="tab-spark"><h4>A short note will do.</h4><p>Describe the idea in plain words. The swarm reads it, picks a mood and sketches opening frames before your drink gets cold.</p></div>
+              <div role="tabpanel" id="pan-forge" aria-labelledby="tab-forge" hidden><h4>Assembled in tiers.</h4><p>Artwork, loops, captions and a landing view get stacked around your idea, one block at a time, then tuned into a single look.</p></div>
+              <div role="tabpanel" id="pan-reign" aria-labelledby="tab-reign" hidden><h4>The lamps stay lit.</h4><p>Once released, the swarm keeps posting, tweaking and answering, so momentum carries on while you sleep.</p></div>
+            </div>
+          </div>
+          <footer class="dcard-foot"><h3 id="t-method">The method</h3><span class="meta">three beats</span></footer>
+        </section>
+
+        <section class="dcard spot span-5" id="ledger" data-reveal aria-labelledby="t-ledger">
+          <div class="dcard-body">
+            <ul class="ledger"><!--@ledger--></ul>
+          </div>
+          <footer class="dcard-foot"><h3 id="t-ledger">Ledger</h3><span class="meta">facts on file</span></footer>
+        </section>
+
+        <section class="dcard spot span-12" data-reveal aria-labelledby="t-slots">
+          <div class="dcard-body">
+            <ul class="tiles wide"><!--@tiles--></ul>
+          </div>
+          <footer class="dcard-foot"><h3 id="t-slots">Empty slots</h3><span class="meta">filled once confirmed</span></footer>
+        </section>
+
+        <section class="dcard spot span-12" id="path" data-reveal aria-labelledby="t-path">
+          <div class="dcard-body">
+            <ol class="path">
+              <li class="spot"><b>01</b><h4>Ignite</h4><p>Logo, backdrop, plus a public face arrive together.</p></li>
+              <li class="spot"><b>02</b><h4>Forge</h4><p>The swarm gets its tools and starts producing for partner projects.</p></li>
+              <li class="spot"><b>03</b><h4>Expand</h4><p>More crowns, more stages, more places to be found.</p></li>
+              <li class="spot"><b>04</b><h4>Steward</h4><p>Token owners steer the swarm's next target.</p></li>
+            </ol>
+          </div>
+          <footer class="dcard-foot"><h3 id="t-path">The path</h3><span class="meta">four stages</span></footer>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="foot-grid">
+      <div><p class="foot-brand">Z001</p><p class="foot-line"><!--@domain--> · <!--@chain--></p></div>
+      <nav aria-label="Footer"><h2>Wander</h2><a href="#pulse">Pulse</a><a href="#method">Method</a><a href="#ledger">Ledger</a><a href="#path">Path</a></nav>
+      <div><h2>Find us</h2><div class="chips"><!--@chips--></div></div>
+    </div>
+    <p class="fine">For information only. Not a nudge toward any transaction.</p>
+    <p class="foot-big" aria-hidden="true">Z001</p>
+  </footer>
+</div>
+
+<script type="application/json" id="register"><!--@runtime--></script>
+</body>
+</html>
